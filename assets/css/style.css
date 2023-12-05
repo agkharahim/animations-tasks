@@ -1,0 +1,765 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.t1-boxes {
+    width: 200px;
+    height: 600px;
+    position: relative;
+}
+
+.t1-red-box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(190, 4, 4) ;
+    margin: 20px;
+    transition-property: width;
+    transition-duration: 2s;
+    transform: scaleX(1);
+    transition-timing-function: ease;
+    position: absolute;
+    top: 0;
+}
+
+.t1-blue-box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(12, 12, 188) ;
+    margin: 20px;
+    transition-property: width;
+    transition-duration: 2s;
+    transform: scaleX(1);
+    transition-delay: 2s;
+    transition-timing-function: ease;
+    position: absolute;
+    top: 250px;
+}
+
+.t1-boxes:hover .t1-red-box {
+    width: 800px;
+}
+
+.t1-boxes:hover .t1-blue-box {
+    width: 800px;
+}
+
+/* Task 1 ends here 
+
+Also Task 2 starts here */
+
+.task-2-boxes {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    
+    
+
+}
+
+.t2-topleft {
+    background-color:red;
+    width: 200px;
+    height: 200px;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+
+ 
+
+}
+
+.t2-topright {
+    background-color:yellow;
+    width: 200px;
+    height: 200px;
+     transition-timing-function: ease;
+    transition-duration: 2s; 
+}
+
+.t2-bottomleft {
+    background-color:blue;
+    width: 200px;
+    height: 200px;
+     transition-timing-function: ease;
+    transition-duration: 2s; 
+    
+} 
+
+.t2-bottomright {
+    background-color:green;
+    width: 200px;
+    height: 200px;
+     transition-timing-function: ease;
+    transition-duration: 2s; 
+}
+
+.t2-content {
+        font-size: 60px;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        z-index: -1;
+}
+
+.task-2-boxes:hover .t2-topleft {
+    transform-origin: left top;
+    transition-duration: 1s;
+    transform: rotate(90deg);
+    transition-timing-function:ease-in-out ;
+
+} 
+.task-2-boxes:hover .t2-topright {
+    transform-origin: right top;
+    transition-duration: 1s;
+    transform: rotate(-90deg);
+    transition-timing-function:ease-in-out ;
+}
+.task-2-boxes:hover .t2-bottomleft {
+    transform-origin: left bottom;
+    transition-duration: 1s;
+    transform: rotate(-90deg);
+    transition-timing-function:ease-in-out ;
+} 
+.task-2-boxes:hover .t2-bottomright {
+    transform-origin: right bottom;
+    transition-duration: 1s;
+    transform: rotate(90deg);
+    transition-timing-function:ease-in-out ;
+}
+
+
+
+/* Task 2 ends here 
+
+Also task 3 Start from here  */
+
+.t3-heading {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: green;
+    padding-bottom: 5px;
+}
+
+.t3-name {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.t3-animations h3 {
+    width: 100%;
+    animation-name: myAnimation3;
+    animation-duration: 2.2s;
+    animation-iteration-count: 3;
+}
+
+.t3-normal {
+    animation-direction:normal;
+}
+.t3-reverse {
+    animation-direction: reverse;
+}
+
+.t3-alt {
+    animation-direction:alternate;
+}
+
+.t3-alt-reverse {
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes myAnimation3 {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 50%;
+    }
+}
+
+
+/* Task 3 ends here 
+
+And Task 4 starts here!! */
+
+
+.t4-heading {
+    font-size: 30px;
+    font-weight: 600;
+    color:green ;
+    margin-bottom: 20px;
+    padding: 0 40px ;
+
+}
+
+.t4-question {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 40px;
+}
+
+.t4-list {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 60px;
+}
+
+ol li::marker { 
+    animation-name: myAnimation4; 
+    animation-duration: 0.5s; 
+    animation-fill-mode: forwards; 
+} 
+
+ol li:nth-child(1)::marker { 
+    animation-delay: 0; 
+} 
+
+ol li:nth-child(2)::marker { 
+    animation-delay: 0.5s; 
+} 
+
+ol li:nth-child(3)::marker { 
+    animation-delay: 1s; 
+} 
+
+ol li:nth-child(4)::marker { 
+    animation-delay: 1.5s; 
+} 
+
+ol li:nth-child(5)::marker { 
+    animation-delay: 2s; 
+} 
+
+@keyframes myAnimation4 { 
+    from { 
+        font-size: 20px; 
+    } 
+
+    to { 
+        font-size: 40px; 
+        color: green; 
+    } 
+} 
+
+/* okay then Task 4 ended here 
+
+And Task 5 starts here!! */
+
+.t5-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color:green ;
+    padding:  20px ;
+}
+
+.t5-container p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.t5-container button {
+    font-size: 30px;
+    padding: 10px;
+    color: black ;
+    border: 1px solid black;
+    margin: 0 30px;
+    cursor: pointer;
+
+}
+
+.t5-container button:hover {
+    color: green;
+    border-color: green;
+    animation: myAnimation5 0.4s ease;
+    
+}
+
+@keyframes myAnimation5 {
+    0% {
+        transform: skew(5deg);
+    }
+    25% {
+        transform: skew(-5deg);
+    }
+    50% {
+        transform: skew(5deg);
+    }
+    75% {
+        transform: skew(-5deg);
+    }
+    100% {
+        transform: skew(5deg);
+    }
+    
+}
+
+/* ondd Task 5 ended here 
+
+And Task 6 starts here!! */
+
+body {
+    width: 100%;
+}
+
+.t6-heading h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color:green ;
+    padding:  20px ;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.t6-content {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    text-align: center;
+    color:green;
+}
+
+.t6-loading {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.t6-blue-box {
+    width: 80px;
+    height: 80px;
+    background-color:dodgerblue;
+    animation: myAnimation6 3s infinite;
+}
+
+.t6-1 {
+    animation-delay:0s;
+} 
+.t6-2 {
+    animation-delay:0.15s;
+}
+.t6-3 {
+    animation-delay:0.30s;
+}
+
+@keyframes myAnimation6 {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+        background-color:rgb(4, 1, 211);
+    }
+    75% {
+        transform: rotate(180);
+        background-color: rgb(80, 80, 234);
+    }
+    100% {
+        transform: rotate(-180deg);
+    }
+    
+}
+
+/* ondd Task 6 ended here 
+
+And Task 7 starts here!! */
+
+.task-7 {
+    background-color:rgb(240, 193, 82);
+}
+
+.t7-head {
+    font-size: 60px;
+    margin-bottom: 30px ;
+    text-align: center;
+}
+
+.t7-boxes {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.t7-box {
+    width: 150px;
+    height: 150px;
+    background-color:rgb(58, 126, 74);
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition-duration: 0.3s ;
+    transition-property: transform;
+}
+
+.t7-x:hover {
+
+    transform: rotateX(180deg);
+}
+
+.t7-y:hover {
+
+    transform: rotateY(180deg);
+}
+
+.t7-z:hover {
+
+    transform: rotateZ(150deg);
+}
+
+/* ondd Task 7 ended here 
+
+And Task 8 starts here!! */
+
+.t8-container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    background-color:rgb(238, 230, 220);
+}
+
+.t8-item {
+    width: 150px;
+    height: 150px;
+    background-color:blue;
+    border-radius: 50%;
+    /* transition: translateX(-50%);  */
+    transition-duration: 1s ;  
+    animation: myAnimation8 3s infinite;  
+    position: relative;
+}
+
+@keyframes myAnimation8 {
+    0% {
+        background-color:blue;
+        border-radius: 50%;
+        top:0;
+        left: 0;
+    }
+    25% {
+        background-color: red;
+        border-radius: 0;
+        top: 0;
+        left: 330px;
+    }
+
+    50% {
+        background-color: forestgreen;
+        border-radius:50%;
+        top: 330px;
+        left: 330px;
+    }
+    75% {
+        background-color:orange;
+        border-radius: 0;
+        top: 330px;
+        left: 0;
+    }
+    100%{
+        background-color:blue;
+        border-radius: 50%;
+        top:0;
+        left: 0;
+    }
+    
+}
+
+/* Task 8 ended here 
+
+And Task 9 starts here!! */
+
+.t9-container {
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+    margin: 30px;
+    animation-duration:5s;
+    animation-timing-function: ease-in-out;
+    animation-name: myAnimation9;
+}
+
+@keyframes myAnimation9 {
+        0% {
+            background-color: yellow;
+        }
+        10% {
+            background-color: blue;
+        }
+        20% {
+            background-color:black;
+        }
+        30% {
+            background-color:red;
+        }
+        40% {
+            background-color:green;
+        }
+        50% {
+            background-color:greenyellow;
+        }
+        60% {
+            background-color:gray;
+        }
+        70% {
+            background-color:blueviolet;
+        }
+        80% {
+            background-color:yellowgreen;
+        }
+        90% {
+            background-color:navy;
+        }
+        100% {
+            background-color:black;
+        }
+}
+
+/* Task 9 ended here 
+
+And Task 10 starts here!! */
+
+.task-10-container {
+    width: 80%;
+    margin: auto;
+}
+
+.task-10-container h2 {
+    margin-top: 100px;  
+    margin-bottom: 20px;
+    margin-left: 28%;
+}
+
+.border-part {
+    width: 600px;
+    height: 100px;
+    border: 1px solid #111;
+    margin: auto;
+}
+
+.range-part {
+    width: 200px;
+    height: 100px;
+    background-color:navy;
+    
+}
+
+.range-part-1 {
+    animation: myAnimation10-1 3s ease infinite;
+    transform: scaleX(1.6);
+    transform-origin: left ;
+}
+
+.range-part-2 {
+    animation: myAnimation10 3s infinite;
+    animation-direction: forwards; 
+    transform: scaleX(1.6);
+    transform-origin: left ; 
+    
+}
+@keyframes myAnimation10-1 {
+    0% {
+        transform: scaleX(1);
+    }
+   
+    33% {
+        transform: scaleX(1.5);
+    }
+
+    66% {
+        transform: scaleX(2);
+    }
+   
+    100%{ 
+        transform: scaleX(1); 
+    }
+    
+}
+
+@keyframes myAnimation10 {
+    0% {
+        transform: scaleX(1);
+    }
+    1% {
+        transform: scaleX(1.5);
+    }
+    33% {
+        transform: scaleX(1.5);
+    }
+    34% {
+        transform: scaleX(2);
+    }
+    66%{ 
+        transform: scaleX(2); 
+    }
+    67% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+    
+}
+
+
+
+/* Task 10 ended here 
+
+And Task 11 starts here!! */
+
+
+.t11-grid-container {
+    width: 30%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-gap: 1px;
+    row-gap: 150px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.grid-item {
+    width: 25px;
+    height: 120px;
+    animation: myAnimation11 1s linear infinite;
+    transform: scaleY(1.5);
+}
+
+.item-green {
+    background-color:#8be0a2;
+}
+
+.item-blue {
+    background-color:#020e26
+}
+
+.t11-item-1 {
+    animation-delay: 0s;
+}
+
+.t11-item-2 {
+    animation-delay: 0.2s;
+}
+
+.t11-item-3 {
+    animation-delay: 0.4s;
+}
+
+.t11-item-4 {
+    animation-delay: 0.6s;
+}
+
+.t11-item-5 {
+    animation-delay: 0.8s;
+}
+
+.t11-item-6 {
+    animation-delay: 0.2s;
+}
+
+.t11-item-7 {
+    animation-delay: 0.4s;
+}
+
+.t11-item-8 {
+    animation-delay: 0.6s;
+}
+
+.t11-item-9 {
+    animation-delay: 0.8s;
+}
+
+.t11-item-10 {
+    animation-delay: 0s;
+}
+
+
+
+@keyframes myAnimation11 {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(2.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+/* Task 11 ended here 
+
+And Task 12 starts here!! */
+
+.t12-container {
+    background-color: purple;
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    transition: transform 1s ease;
+    cursor:pointer;
+}
+
+.t12-container:hover{
+    transform: scale(1.2);
+}
+
+
+/* Task 12 ended here 
+
+And Task 13 starts here!! */
+
+
+.t13-container {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+
+}
+
+.t13-first {
+    position: relative;
+    font-size: 50px;
+}
+
+.t13-first::before {
+    content: "";
+    width: 6em;
+    height: 1px;
+    background-color:red;
+    position: absolute;
+    top: 0;
+    
+}
+.t13-first::after {
+    content: "";
+    width: 6em;
+    height: 1px;
+    background-color:black;
+    position: absolute;
+    bottom: 0;
+    left: 37.5%;
+}
+
+
+.t13-first:hover::before {
+    transition:transform 1s ease;
+    transform: translateY(1.5);
+    
+}
